@@ -5,7 +5,7 @@ const CONFIG = {
         REPO: "repos",
         TOKEN: "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",
         BRANCH: "main",
-        BASE_URL: "https://api.github.com/repos"
+        BASE_URL: "https://horridx.github.io/repos/"
     },
     PATHS: {
         IMAGES: "assets/images",
