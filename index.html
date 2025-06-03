@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-comment-dots"></i> Посты</h1>
+            <button id="newPostBtn">Новый пост</button>
+        </header>
+
+        <div id="postsContainer"></div>
+
+        <!-- Модальное окно -->
+        <div id="postModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Новый пост</h2>
+                <form id="postForm">
+                    <input type="text" id="postTitle" placeholder="Заголовок" required>
+                    <textarea id="postText" placeholder="Текст поста" required></textarea>
+                    <input type="file" id="postImage" accept="image/*">
+                    <input type="file" id="postFile">
+                    <button type="submit">Опубликовать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
+    
+    <!-- Основной скрипт -->
+    <script src="script.js"></script>
+</body>
+</html>
