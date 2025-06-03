@@ -3,7 +3,7 @@ const CONFIG = {
     GITHUB: {
         OWNER: "HorriDX",
         REPO: "repos",
-        TOKEN: "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",
+        TOKEN: "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",
         BRANCH: "main",
         BASE_URL: "https://api.github.com/repos"
     },
